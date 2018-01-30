@@ -1,0 +1,36 @@
+<h1>Add a new Dessert</h1>
+
+<form>
+    
+    <input ng-model="dessert.name" placeholder="Enter Dessert Name">
+    <input ng-model="dessert.discription" placeholder="Enter Dessert Name">
+    <button ng-click="save()" class="btn btn-success">Save</button>
+    
+    
+    
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Name:</td>
+                <td>Discription:</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in desserts">
+                <td> {{ x.name }} </td>
+                <td> {{ x.discription }} </td>
+            </tr>
+            <a href="/add">Add a New Dessert</a>
+        </tbody>
+    </table>
+    
+</form>
+
+<!--<div ng-app="myShoppingList" ng-controller="myCtrl">-->
+<!--    <ul>-->
+<!--        <li ng-repeat="x in products">{{x}}</li>-->
+<!--    </ul>-->
+<!--    <input ng-model="addMe">-->
+<!--    <button ng-click="addItem()">Add</button>-->
+<!--</div>-->

@@ -1,0 +1,44 @@
+<div>
+    <div>
+        <button onClick=""></button>
+        <form>
+            <div class="offset-col-xs-2 col-xs-8">
+                <div id="s1">
+                <label for="sGame">Game:</label>
+                <input id="ss" list="games" name="sGames">
+                    <datalist id="games">
+                        <option value="League of Legends">LoL</option>
+                        <option value="World of Warcraft">WoW</option>
+                        <option value="Minecraft">Minec</option>
+                        <option value="Call of Duty">cod</option>
+                        <option value="Other">oth</option>
+                    </datalist>
+                <label for="sLan">Language:</label>
+                <select name="sLan">
+                    <option value="langENG">English</option>
+                    <option value="langESP">Spanish</option>
+                    <option value="langFRE">French</option>
+                    <option value="langPOL">Polish</option>
+                    <option value="oth">Other</option>
+                </select>
+                </div>
+                <div id="s2">
+                <input type="submit"/>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    
+    
+</div>
+
+
+<script>
+    if( $("#games").value == "League of Legends"){
+        alert("Hello");
+    }else{
+        
+    }
+        
+</script>
